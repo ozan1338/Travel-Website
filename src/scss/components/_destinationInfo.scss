@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.destinationInfo{
+    margin: 8rem 0;
+    &_p{
+        font-size: 1.5rem;
+        color: $silverDark;
+        line-height: 2.8rem;
+    }
+    &_details{
+        @include align(flex, space-between, center, null);
+
+        padding: 1.3rem 0;
+        border: 1px dotted $silverLight-50;
+        &_head{
+            font-size: 1.4rem;
+            color: $silverDark ;
+        }
+        &_text{
+            font-size: 1.4rem;
+            color: $silverDark ;
+        }
+    }
+}
